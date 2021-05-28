@@ -11,7 +11,7 @@ main ()
   cout << " Enter the number of entries:" << endl;
   cout << ">>";
   cin >> notes;
-  storage variant8(true);
+  storage variant14(true);
   storage *allNotes = new storage[notes];
   for (;;)
     {
@@ -19,22 +19,22 @@ main ()
       cin >> method;
 
       if (method == "add")
-	variant8.add (allNotes, notes);
+	variant14.add (allNotes, notes);
       if (method == "edit")
-	variant8.edit (allNotes);
+	variant14.edit (allNotes);
       if (method == "search")
-	variant8.search (allNotes, notes);
+	variant14.search (allNotes, notes);
       if (method == "triage")
-	variant8.triage (allNotes, notes);
+	variant14.triage (allNotes, notes);
       if (method == "del")
-	variant8.del (allNotes);
+	variant14.del (allNotes);
       if (method == "print")
-	variant8.print (allNotes, notes);
+	variant14.print (allNotes, notes);
 
 }
 
-  // variant8.del(allNotes,notes);
-  // variant8.print(allNotes,notes);
+  // variant14.del(allNotes,notes);
+  // variant14.print(allNotes,notes);
 
 
 
